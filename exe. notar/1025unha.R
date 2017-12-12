@@ -1,0 +1,14 @@
+pesos = c(78.4, 79.8, 76.0, 75.3, 77.4, 78.6, 77.9, 78.8, 79.2, 75.2, 75.0, 79.4)
+media = mean(pesos)
+media
+pesos.d2 = (pesos - mean(pesos))^2 
+pesos.d2s = sum(pesos.d2) #soma dos desvios
+pesos.d2s
+
+numero = length(pesos)
+pesos.v = sum((media-pesos)^2)/(numero-1)
+pesos.v
+
+pesos.ds = sqrt(pesos.d2s) #desvio eh a raiz quadrada das somas dos desvios
+pesos.s = pesos.ds/sqrt(length(pesos)-1)
+
